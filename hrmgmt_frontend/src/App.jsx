@@ -1,18 +1,22 @@
-import header_component from "./components/header_component";
-import footer_component from "./components/footer_component":
+import Header_component from './components/header_component'
+import Footer_component from './components/footer_component'
+import Home from './pages/Home'
+import  About from './pages/About'
+import Contact from './pages/Contact'
 
+import {Routes,Route} from 'react-router-dom'
 
-function App() {
-  
-
+function App() {  
   return (
     <div>
-      <header_component></header_component>
-      <h1>My First React App </h1>
-      <h4>created by Himanth</h4>
-      <footer_component></footer_component>
-   </div>
+     <Header_component></Header_component> 
+    <Routes>
+       <Route path="/" element={<Home/>}></Route>
+       <Route path="/about" element={<About/>}></Route>
+       <Route path="/contact" element={<Contact/>}></Route>
+    </Routes>
+    <Footer_component></Footer_component>
+    </div>
   )
 }
-
 export default App

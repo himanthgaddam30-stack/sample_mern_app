@@ -1,8 +1,20 @@
-function footer_component(){
-    return (
+function Footer_component(){
+    return(
         <div>
-            <footer>@copyrights 2026 - Himanth</footer>
+          <div class="container text-center">
+  <div class="row">
+    <div class="col">
+      Column
+    </div>
+    <div class="col">
+      Column
+    </div>
+    <div class="col">
+      Column
+    </div>
+  </div>
+</div>
         </div>
     )
 }
-export default footer_component
+export default Footer_component
